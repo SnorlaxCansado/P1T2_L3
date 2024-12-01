@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Santos - Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gabriel Santos</h1>
+        <p>Aspiring Developer with a Passion for Computer Science</p>
+        <div class="profile-photo">
+            <img src="images/gabriel.png" alt="Photo of Gabriel Santos" class="profile-image">
+        </div>
+    </header>   
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="hobbies.html" class="active">Hobbies & Interests</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="images/camping.webp" alt="Camping" class="slide-image">
+                    <div class="slide-caption">
+                        <h3>Traveling and Camping</h3>
+                        <p>I enjoy traveling and camping, especially in places with abundant nature.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="images/movies.webp" alt="Movies" class="slide-image">
+                    <div class="slide-caption">
+                        <h3>Music, Cinema, and Reading</h3>
+                        <p>I love listening to music, watching films, and reading books related to History and Fantasy.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="images/gaming.webp" alt="Gaming" class="slide-image">
+                    <div class="slide-caption">
+                        <h3>Playing Competitive Online Games</h3>
+                        <p>I enjoy the thrill of competitive online gaming.</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gabriel Santos</p>
+        <ul>
+            <li>Email: <a href="mailto:gabrielthss@gmail.com">gabrielthss@gmail.com</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/gabriel-tiago-hardt-de-souto-santos-6471622a8" target="_blank">
+                    <img src="images/linkedin.jpg" alt="LinkedIn Logo" class="footer-logo">
+                </a>
+                <a href="https://github.com/SnorlaxCansado" target="_blank">
+                    <img src="images/github.png" alt="GitHub Logo" class="footer-logo">
+                </a>
+            </li>
+        </ul>
+    </footer>    
+
+    <script src="slideshow.js"></script>
+</body>
+</html>

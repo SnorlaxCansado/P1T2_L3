@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Santos - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gabriel Santos</h1>
+        <p>Aspiring Developer with a Passion for Computer Science</p>
+        <div class="profile-photo">
+            <img src="images/gabriel.png" alt="Photo of Gabriel Santos" class="profile-image">
+        </div>
+    </header>    
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="hobbies.html">Hobbies & Interests</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Hsfinance Project -->
+            <button class="accordion">Hsfinance</button>
+            <div class="accordion-content">
+                <p><strong>Repository:</strong> <a href="https://github.com/SnorlaxCansado/hsfinance" target="_blank">hsfinance</a></p>
+                <h3>Overview</h3>
+                <p>Hsfinance is a Stock Analysis Report Generator that combines various data sources to produce comprehensive reports for selected stock tickers. It leverages multiple APIs and AI tools to gather financial, geopolitical, and sector-specific news, creating insightful reports in both text and PDF formats.</p>
+                <h4>Main Features</h4>
+                <ul>
+                    <li>Selects complementary tickers for comparative analysis.</li>
+                    <li>Collects stock data from Yahoo Finance and news using SERPER and Jina AI APIs.</li>
+                    <li>Generates AI-powered insights on stock performance, geopolitical impacts, and sector-specific context.</li>
+                    <li>Produces a well-formatted PDF report with all relevant data and analysis.</li>
+                </ul>
+                <h4>Setup Instructions</h4>
+                <ol>
+                    <li>Clone the repository using <code>git clone</code>.</li>
+                    <li>Create a virtual environment with <code>python -m venv venv</code>.</li>
+                    <li>Activate the environment and install dependencies with <code>pip install -r requirements.txt</code>.</li>
+                    <li>Set environment variables in a <code>.env</code> file (API keys for OpenAI, SERPER, and Jina Reader).</li>
+                    <li>Run the script using <code>python src/main.py &lt;ticker&gt; --articles &lt;number&gt; --period &lt;period&gt;</code>.</li>
+                </ol>
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>Python (pandas, numpy, logging, ReportLab, fpdf2)</li>
+                    <li>APIs: OpenAI GPT, SERPER, Jina AI Reader, Yahoo Finance</li>
+                    <li>Data visualization with Matplotlib</li>
+                </ul>
+            </div>
+
+            <!-- Market Data PoC -->
+            <button class="accordion">Market Data Proof of Concept</button>
+            <div class="accordion-content">
+                <p><strong>Repository:</strong> <a href="https://github.com/SnorlaxCansado/market_data_poc" target="_blank">market_data_poc</a></p>
+                <h3>Overview</h3>
+                <p>This Proof of Concept (PoC) demonstrates a simple pipeline for fetching stock market data from an API, transforming the data, and saving it in both CSV and Excel formats. The project is designed to be lightweight and efficient.</p>
+                <h4>Folder Structure</h4>
+                <ul>
+                    <li><strong>config/:</strong> Reserved for configuration files (e.g., API keys).</li>
+                    <li><strong>data/:</strong> Contains output CSV and Excel files.</li>
+                    <li><strong>logs/:</strong> Tracks logs for each pipeline run.</li>
+                    <li><strong>notebooks/:</strong> For experimentation and exploratory data analysis.</li>
+                    <li><strong>scripts/:</strong> Core pipeline logic for fetching and transforming data.</li>
+                    <li><strong>tests/:</strong> Unit tests for the project.</li>
+                </ul>
+                <h4>Setup Instructions</h4>
+                <ol>
+                    <li>Clone the repository using <code>git clone</code>.</li>
+                    <li>Create a virtual environment with <code>python3 -m venv venv</code>.</li>
+                    <li>Activate the environment and install dependencies with <code>pip install -r requirements.txt</code>.</li>
+                    <li>Run the pipeline using <code>python main.py</code>.</li>
+                </ol>
+                <h4>API Configuration</h4>
+                <p>The project uses the Marketstack API to fetch stock market data. Ensure you have an API key configured in <code>config/config.py</code>.</p>
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li>Python (pandas, requests, logging)</li>
+                    <li>Data storage formats: CSV, Excel</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gabriel Santos</p>
+        <ul>
+            <li>Email: <a href="mailto:gabrielthss@gmail.com">gabrielthss@gmail.com</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/gabriel-tiago-hardt-de-souto-santos-6471622a8" target="_blank">
+                    <img src="images/linkedin.jpg" alt="LinkedIn Logo" class="footer-logo">
+                </a>
+                <a href="https://github.com/SnorlaxCansado" target="_blank">
+                    <img src="images/github.png" alt="GitHub Logo" class="footer-logo">
+                </a>
+            </li>
+        </ul>
+    </footer>   
+
+    <script src="accordion.js"></script>
+</body>
+</html>
